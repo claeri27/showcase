@@ -46,11 +46,11 @@ const Nav = () => {
       height="80px"
       alignItems="center"
       justifyContent="space-between"
-      backgroundColor="blue"
+      backgroundImage="linear-gradient(to bottom right, blue, lightblue)"
       >
       <TitleWrapper>
         <IconWrapper>
-          <FontAwesomeIcon icon="lightbulb" color="white" size="2x" />
+          <FontAwesomeIcon icon="lightbulb" color="yellow" size="2x" />
         </IconWrapper>
         <Title>Showcase</Title>
       </TitleWrapper>

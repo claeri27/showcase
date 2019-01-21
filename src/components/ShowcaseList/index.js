@@ -7,14 +7,14 @@ const ShowcaseListWrapper = styled.div`
 `;
 
 const Spinner = styled.img`
-  animation: spin infinite 20s linear;
-  
+  animation: spin infinite 10s linear;
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(-360deg);
     }
   }
 `;
@@ -26,19 +26,25 @@ const ShowcaseList = () => {
         <Row
           alignItems="center"
           justifyContent="center"
-          height='500px'
-          backgroundColor='red'
+          minHeight='500px'
+          backgroundImage="linear-gradient(salmon, red)"
         >
-          <Col><Spinner src={logo} alt='logo'/></Col>
-          <Col>Two</Col>
-          <Col>Three</Col>
+          <Col>
+            <Spinner src={logo} alt='logo'/>
+          </Col>
+          <Col>
+            <Spinner src={logo} alt='logo'/>
+          </Col>
+          <Col>
+            <Spinner src={logo} alt='logo'/>
+          </Col>
         </Row>
         <Row
           mt='10px'
-          backgroundColor="magenta"
           alignItems="center"
           justifyContent="center"
-          height='500px'
+          minHeight='500px'
+          backgroundImage="linear-gradient(yellow, darkorange)"
         >
           <Col>One</Col>
           <Col>Two</Col>
@@ -46,10 +52,10 @@ const ShowcaseList = () => {
         </Row>
         <Row
           mt='10px'
-          backgroundColor="springgreen"
           alignItems="center"
           justifyContent="center"
-          height='500px'
+          minHeight='500px'
+          backgroundImage="linear-gradient(lightgreen, green)"
         >
           <Col>One</Col>
           <Col>Two</Col>

@@ -9,11 +9,13 @@ const FooterBar = styled.div`
   background: blue;
   align-items: center;
   justify-content: space-between;
+  background-image: linear-gradient(to bottom right, blue, lightblue)
 `;
 
 const TextWrapper = styled.section`
   color: white;
-  margin-right: 10px;
+  margin-right: 15px;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const MadeWith = styled.section`
@@ -41,6 +43,7 @@ const Text = styled.section`
   width: 200px;
   color: white;
   text-align: left;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const Footer = () => {
