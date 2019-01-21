@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "chris",
+    "password": null,
+    "database": "blog-thing",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "chris",
+    "password": null,
+    "database": "blog-thing",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "chris",
+    "password": null,
+    "database": "blog-thing",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
