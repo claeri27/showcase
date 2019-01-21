@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Button } from '@smooth-ui/core-sc'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faIgloo)
+library.add(faLightbulb)
 
 const Navbar = styled.div`
   display: flex;
@@ -28,6 +28,7 @@ const ButtonWrapper = styled.section`
 
 const IconWrapper = styled.section`
   align-self: center;
+  margin-right: 20px;
 `;
 
 const Title = styled.div`
@@ -42,7 +43,7 @@ const Nav = () => {
     <Navbar>
       <TitleWrapper>
         <IconWrapper>
-          <FontAwesomeIcon icon="igloo" />
+          <FontAwesomeIcon icon="lightbulb" color="white" size="2x" />
         </IconWrapper>
         <Title>Showcase</Title>
       </TitleWrapper>
