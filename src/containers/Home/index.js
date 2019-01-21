@@ -1,7 +1,6 @@
 import React from 'react'
 import Nav from '../../components/Nav'
 import styled from 'styled-components';
-import { Grid, Row, Col } from '@smooth-ui/core-sc'
 import Footer from '../../components/Footer'
 import ShowcaseList from '../../components/ShowcaseList'
 

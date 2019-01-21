@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Button } from '@smooth-ui/core-sc'
+import { Box, Button } from '@smooth-ui/core-sc'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faLightbulb)
 
-const Navbar = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 80px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: blue;
-`;
+// const Navbar = styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   height: 80px;
+//   align-items: center;
+//   justify-content: space-between;
+//   background-color: blue;
+// `;
 
 const TitleWrapper = styled.section`
   margin-left: 5%;
@@ -40,7 +40,14 @@ const Title = styled.div`
 
 const Nav = () => {
   return (
-    <Navbar>
+    <Box
+      display="flex"
+      flexDirection="row"
+      height="80px"
+      alignItems="center"
+      justifyContent="space-between"
+      backgroundColor="blue"
+      >
       <TitleWrapper>
         <IconWrapper>
           <FontAwesomeIcon icon="lightbulb" color="white" size="2x" />
@@ -51,7 +58,7 @@ const Nav = () => {
         <Button mr="10px">Login</Button>
         <Button variant="success">Register</Button>
       </ButtonWrapper>
-    </Navbar>
+    </Box>
   )
 }
 
