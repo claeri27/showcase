@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Spinner = styled.img`
   animation: spin infinite 20s linear;
-  max-width: 100px;
+  max-width: 125px;
 
   @keyframes spin {
     from {

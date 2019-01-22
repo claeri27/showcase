@@ -6,8 +6,8 @@ const LoginButton = () => {
     <Toggler>
       {({ toggled, onToggle }) => (
         <div>
-          <Button backgroundColor="darkblue" onClick={() => onToggle(true)}>
-            Register
+          <Button fontSize="18px" p="20px" backgroundColor="darkblue" onClick={() => onToggle(true)}>
+            REGISTER
           </Button>
           <Modal opened={toggled} onClose={() => onToggle(false)}>
             <ModalDialog>

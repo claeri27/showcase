@@ -4,6 +4,7 @@ import { Grid, Row, Col } from '@smooth-ui/core-sc'
 import logo from '../../logo.svg'
 
 const ShowcaseListWrapper = styled.div`
+  margin-top: 50px;
 `;
 
 const Spinner = styled.img`
@@ -28,7 +29,7 @@ const ShowcaseList = () => {
           justifyContent="center"
           minHeight='500px'
           backgroundImage="linear-gradient(salmon, red)"
-          mb="20px"
+          mb="50px"
         >
           <Col>
             {/* <Spinner src={logo} alt='logo'/> */}
@@ -40,7 +41,7 @@ const ShowcaseList = () => {
           justifyContent="center"
           minHeight='500px'
           backgroundImage="linear-gradient(yellow, darkorange)"
-          mb="20px"
+          mb="50px"
         >
           <Col>
             {/* <Spinner src={logo} alt='logo'/> */}
@@ -52,7 +53,7 @@ const ShowcaseList = () => {
           justifyContent="center"
           minHeight='500px'
           backgroundImage="linear-gradient(lightgreen, green)"
-          mb="20px"
+          mb="50px"
         >
           <Col>
             {/* <Spinner src={logo} alt='logo'/> */}

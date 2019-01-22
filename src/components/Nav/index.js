@@ -12,6 +12,8 @@ library.add(faLightbulb)
 const TitleWrapper = styled.section`
   margin-left: 5%;
   display: flex;
+  font-size: 20px;
+  user-select: none;
 `;
 
 const ButtonWrapper = styled.section`
@@ -36,7 +38,7 @@ const Nav = () => {
     <Box
       display="flex"
       flexDirection="row"
-      height="80px"
+      height="100px"
       alignItems="center"
       justifyContent="space-between"
       // backgroundImage="linear-gradient(to bottom right, blue, lightblue)"
@@ -44,7 +46,11 @@ const Nav = () => {
       >
       <TitleWrapper>
         <IconWrapper>
-          <FontAwesomeIcon icon="lightbulb" color="yellow" size="2x" />
+          <FontAwesomeIcon
+            icon="lightbulb"
+            color="yellow"
+            size="3x"
+          />
         </IconWrapper>
         <Title>Showcase</Title>
       </TitleWrapper>
