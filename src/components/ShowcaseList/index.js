@@ -1,8 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col } from '@smooth-ui/core-sc'
+import logo from '../../logo.svg'
 
 const ShowcaseListWrapper = styled.div`
+`;
+
+const Spinner = styled.img`
+  animation: spin infinite 10s linear;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
 `;
 
 const ShowcaseList = () => {

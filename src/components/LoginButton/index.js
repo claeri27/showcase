@@ -14,13 +14,15 @@ const LoginButton = () => {
               <ModalContent>
                 <ModalCloseButton />
                 <ModalHeader>
-                  <Typography variant="h5" m={0}>
-                    Modal title
+                  <Typography variant="h4" m={0}>
+                    Login with Google or Email
                   </Typography>
                 </ModalHeader>
-                <ModalBody>Modal body</ModalBody>
-                <ModalFooter>
-                  <Button variant="primary">Save changes</Button>
+                <ModalBody>
+                  Body stuff here
+                </ModalBody>
+                <ModalFooter alignSelf="center">
+                  <Button variant="primary">Accept</Button>
                   <Button variant="secondary" onClick={() => onToggle(false)}>
                     Close
                   </Button>

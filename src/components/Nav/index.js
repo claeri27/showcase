@@ -9,15 +9,6 @@ import RegisterButton from '../../components/RegisterButton'
 
 library.add(faLightbulb)
 
-// const Navbar = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   height: 80px;
-//   align-items: center;
-//   justify-content: space-between;
-//   background-color: blue;
-// `;
-
 const TitleWrapper = styled.section`
   margin-left: 5%;
   display: flex;
@@ -48,7 +39,8 @@ const Nav = () => {
       height="80px"
       alignItems="center"
       justifyContent="space-between"
-      backgroundImage="linear-gradient(to bottom right, blue, lightblue)"
+      // backgroundImage="linear-gradient(to bottom right, blue, lightblue)"
+      backgroundColor="darkcyan"
       >
       <TitleWrapper>
         <IconWrapper>

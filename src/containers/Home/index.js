@@ -5,7 +5,6 @@ import Footer from '../../components/Footer'
 import ShowcaseList from '../../components/ShowcaseList'
 
 const HomeWrapper = styled.div`
-  background-color: grey;
 `;
 
 const Home = () => {
