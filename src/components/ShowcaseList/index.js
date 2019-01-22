@@ -1,22 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col } from '@smooth-ui/core-sc'
-import logo from '../../logo.svg'
 
 const ShowcaseListWrapper = styled.div`
-`;
-
-const Spinner = styled.img`
-  animation: spin infinite 10s linear;
-
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
-  }
 `;
 
 const ShowcaseList = () => {
@@ -28,9 +14,10 @@ const ShowcaseList = () => {
           justifyContent="center"
           minHeight='500px'
           backgroundImage="linear-gradient(salmon, red)"
+          mb="20px"
         >
           <Col>
-            <Spinner src={logo} alt='logo'/>
+            {/* <Spinner src={logo} alt='logo'/> */}
           </Col>
         </Row>
         <Row
@@ -39,9 +26,10 @@ const ShowcaseList = () => {
           justifyContent="center"
           minHeight='500px'
           backgroundImage="linear-gradient(yellow, darkorange)"
+          mb="20px"
         >
           <Col>
-            <Spinner src={logo} alt='logo'/>
+            {/* <Spinner src={logo} alt='logo'/> */}
           </Col>
         </Row>
         <Row
@@ -50,9 +38,10 @@ const ShowcaseList = () => {
           justifyContent="center"
           minHeight='500px'
           backgroundImage="linear-gradient(lightgreen, green)"
+          mb="20px"
         >
           <Col>
-            <Spinner src={logo} alt='logo'/>
+            {/* <Spinner src={logo} alt='logo'/> */}
           </Col>
         </Row>
       </Grid>

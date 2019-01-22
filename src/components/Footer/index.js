@@ -9,13 +9,12 @@ const FooterBar = styled.div`
   background: blue;
   align-items: center;
   justify-content: space-between;
+  bottom: 0;
 `;
 
 const TextWrapper = styled.section`
   color: white;
-  margin-right: 2%;
   font-family: 'Roboto', sans-serif;
-  width: 140px;
 `;
 
 const MadeWith = styled.section`
@@ -29,6 +28,11 @@ const ReactText = styled.div`
   color: orange;
   font-size: 1.3em;
   font-weight: bold;
+`;
+
+const ButtonsWrapper = styled.section`
+  margin-right: 2%;
+  width: 140px;
 `;
 
 const Spinner = styled.img`
@@ -59,9 +63,11 @@ const Footer = () => {
         <Spinner src={logo} alt='react-spinner'/>
         <Text>Made with <ReactText>React</ReactText></Text>
       </MadeWith>
-      <TextWrapper>
-        Copyright @ 2019
-      </TextWrapper>
+      <ButtonsWrapper>
+        <TextWrapper>
+          Copyright @ 2019
+        </TextWrapper>
+      </ButtonsWrapper>
     </FooterBar>
   )
 }
