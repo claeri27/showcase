@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Box, Button } from '@smooth-ui/core-sc'
+import { Box } from '@smooth-ui/core-sc'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import LoginButton from '../../components/LoginButton'
+import RegisterButton from '../../components/RegisterButton'
 
 library.add(faLightbulb)
 
@@ -55,8 +57,8 @@ const Nav = () => {
         <Title>Showcase</Title>
       </TitleWrapper>
       <ButtonWrapper>
-        <Button mr="10px">Login</Button>
-        <Button variant="success">Register</Button>
+        <LoginButton />
+        <RegisterButton />
       </ButtonWrapper>
     </Box>
   )

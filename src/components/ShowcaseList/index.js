@@ -32,12 +32,6 @@ const ShowcaseList = () => {
           <Col>
             <Spinner src={logo} alt='logo'/>
           </Col>
-          <Col>
-            <Spinner src={logo} alt='logo'/>
-          </Col>
-          <Col>
-            <Spinner src={logo} alt='logo'/>
-          </Col>
         </Row>
         <Row
           mt='10px'
@@ -46,9 +40,9 @@ const ShowcaseList = () => {
           minHeight='500px'
           backgroundImage="linear-gradient(yellow, darkorange)"
         >
-          <Col>One</Col>
-          <Col>Two</Col>
-          <Col>Three</Col>
+          <Col>
+            <Spinner src={logo} alt='logo'/>
+          </Col>
         </Row>
         <Row
           mt='10px'
@@ -57,9 +51,9 @@ const ShowcaseList = () => {
           minHeight='500px'
           backgroundImage="linear-gradient(lightgreen, green)"
         >
-          <Col>One</Col>
-          <Col>Two</Col>
-          <Col>Three</Col>
+          <Col>
+            <Spinner src={logo} alt='logo'/>
+          </Col>
         </Row>
       </Grid>
     </ShowcaseListWrapper>

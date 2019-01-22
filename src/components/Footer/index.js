@@ -9,13 +9,13 @@ const FooterBar = styled.div`
   background: blue;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom right, blue, lightblue)
 `;
 
 const TextWrapper = styled.section`
   color: white;
-  margin-right: 15px;
+  margin-right: 2%;
   font-family: 'Roboto', sans-serif;
+  width: 140px;
 `;
 
 const MadeWith = styled.section`
@@ -23,6 +23,12 @@ const MadeWith = styled.section`
   flex-direction: row;
   align-items: center;
   padding: 10px;
+`;
+
+const ReactText = styled.div`
+  color: orange;
+  font-size: 1.3em;
+  font-weight: bold;
 `;
 
 const Spinner = styled.img`
@@ -51,10 +57,10 @@ const Footer = () => {
     <FooterBar>
       <MadeWith>
         <Spinner src={logo} alt='react-spinner'/>
-        <Text>Made with React</Text>
+        <Text>Made with <ReactText>React</ReactText></Text>
       </MadeWith>
       <TextWrapper>
-        Created by Christopher Laeri
+        Copyright @ 2019
       </TextWrapper>
     </FooterBar>
   )
