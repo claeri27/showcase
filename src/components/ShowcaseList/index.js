@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Button, Grid, Row, Col } from '@smooth-ui/core-sc'
 import axios from 'axios'
@@ -25,6 +25,10 @@ const Spinner = styled.img`
 const ShowcaseList = () => {
   const [movies, setMovies] = useState([])
 
+  useEffect(() => {
+    getNowPlaying()
+  }, [])
+
   const getNowPlaying = async () => {
     const BASE_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=aa4028a6dba37dd82b8e185fa521fe08&language=en-US`;
     const resp = await axios.get(BASE_URL);
@@ -37,22 +41,19 @@ const ShowcaseList = () => {
         <Row
           alignItems="center"
           justifyContent="center"
-          minHeight='500px'
+          // minHeight='500px'
           backgroundImage="linear-gradient(salmon, red)"
           mb="50px"
+          overflow="auto"
+          height="450px"
         >
-          <Col>
-            <Button onClick={() => {
-              getNowPlaying()
-              console.log(movies);
-            }}>TEST MOVIES</Button>
-            {/* <Spinner src={logo} alt='logo'/> */}
-          </Col>
           {movies.map(movie => {
             return (
-              <Col>
-                <h2>{movie.title}</h2>
-                <p>{movie.overview}</p>
+              <Col
+                // maxWidth="300px"
+                // maxHeight="450px"
+              >
+                <img src={'http://image.tmdb.org/t/p/w300/' + movie.poster_path} alt='img text'/>
               </Col>
           )})}
         </Row>
