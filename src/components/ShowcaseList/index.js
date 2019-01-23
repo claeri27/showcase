@@ -26,11 +26,9 @@ const ShowcaseList = () => {
   const [movies, setMovies] = useState([])
 
   const getNowPlaying = async () => {
-    if (movies) {
-      const BASE_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=aa4028a6dba37dd82b8e185fa521fe08&language=en-US`;
-      const resp = await axios.get(BASE_URL);
-      setMovies(resp.data.results)
-    }
+    const BASE_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=aa4028a6dba37dd82b8e185fa521fe08&language=en-US`;
+    const resp = await axios.get(BASE_URL);
+    setMovies(resp.data.results)
   }
 
   return (
@@ -50,6 +48,13 @@ const ShowcaseList = () => {
             }}>TEST MOVIES</Button>
             {/* <Spinner src={logo} alt='logo'/> */}
           </Col>
+          {movies.map(movie => {
+            return (
+              <Col>
+                <h2>{movie.title}</h2>
+                <p>{movie.overview}</p>
+              </Col>
+          )})}
         </Row>
         <Row
           mt='10px'
