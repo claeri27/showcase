@@ -1,8 +1,8 @@
 import React from 'react'
 import { Label, Input, ControlFeedback, FormGroup, Toggler, Modal, ModalBody, ModalDialog, ModalContent, ModalCloseButton, ModalHeader, Typography, ModalFooter, Button } from '@smooth-ui/core-sc'
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { GoogleLogin } from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
+// import FacebookLogin from 'react-facebook-login';
 import styled from 'styled-components';
 
 const responseFacebook = (response) => {

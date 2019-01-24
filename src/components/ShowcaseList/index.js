@@ -25,18 +25,23 @@ const Spinner = styled.img`
 const ShowcaseList = () => {
   const [movies, setMovies] = useState([])
 
+  // useEffect(() => {
+  //   getNowPlaying()
+  // }, [])
+
   useEffect(() => {
-    getNowPlaying()
-  }, [])
+    console.log('Movies updated');
+  }, [movies])
 
   const getNowPlaying = async () => {
     const BASE_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=aa4028a6dba37dd82b8e185fa521fe08&language=en-US`;
-    const resp = await axios.get(BASE_URL);
+    const resp = await axios(BASE_URL);
     setMovies(resp.data.results)
   }
 
   return (
     <ShowcaseListWrapper>
+      <button onClick={() => getNowPlaying()}>Thing</button>
       <Grid fluid mt="20px" mb="20px">
         <Row
           alignItems="center"
